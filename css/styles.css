@@ -1,12 +1,14 @@
 /* ======================= GENERAL SECTIONS characteristics ============================== */
 
 .occupation-section,
-.team-section {
+.team-section,
+.clients-section {
   padding-bottom: 94px;
 }
 
 .advanteges-section,
-.team-section {
+.team-section,
+.clients-section {
   padding-top: 94px;
 }
 
@@ -220,12 +222,15 @@
   letter-spacing: 0.03em;
 }
 
-/* sosial list */
+/* =============================ICONS block ===============================*/
 
-.sosial-list {
+.sosial-list,
+.clients-section-list {
   display: flex;
   justify-content: space-between;
 }
+
+/* out team icons */
 
 .sosial-list__link {
   display: flex;
@@ -241,16 +246,29 @@
   background-color: var(--acsent-color);
 }
 
-.sosial-list__icon {
-  width: 20px;
-  height: 20px;
-
-  fill: var(--sosial-icon-color);
+.sosial-list__icon,
+.clients-section__icon {
+  fill: var(--icon-color);
 }
 
 .sosial-list__link:hover .sosial-list__icon {
   fill: var(--secondary-color);
 }
-/* ========================= end our team section ==============================*/
 
-/* style="fill: var(--color1, #afb1b8)", fill="#afb1b8"*/
+/* our clients icons */
+
+.clients-section__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 90px;
+
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+}
+
+.clients-section__link:hover .clients-section__icon {
+  fill: var(--acsent-color);
+}
