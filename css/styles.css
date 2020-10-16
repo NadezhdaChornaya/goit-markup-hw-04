@@ -191,7 +191,11 @@
 .box-content {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
   text-align: center;
+
+  background: var(--secondary-color);
 
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -210,10 +214,43 @@
 
 .position {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
 
+/* sosial list */
+
+.sosial-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sosial-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+}
+
+.sosial-list__link:hover {
+  background-color: var(--acsent-color);
+}
+
+.sosial-list__icon {
+  width: 20px;
+  height: 20px;
+
+  fill: var(--sosial-icon-color);
+}
+
+.sosial-list__link:hover .sosial-list__icon {
+  fill: var(--secondary-color);
+}
 /* ========================= end our team section ==============================*/
+
+/* style="fill: var(--color1, #afb1b8)", fill="#afb1b8"*/
