@@ -13,9 +13,9 @@
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
   --background-color: #2f303a;
   --button-background: #f5f4fa;
-  --border-color: #EEEEEE;
-  --border-color-secondary: #ECECEC;
-  --icon-color: #AFB1B8;
+  --border-color: #eeeeee;
+  --border-color-secondary: #ececec;
+  --icon-color: #afb1b8;
   --footer-icon: rgba(255, 255, 255, 0.1);
 }
 
@@ -31,7 +31,7 @@ html {
 }
 
 /* сбрасываем отступы строчных img */
-img{
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -45,7 +45,7 @@ img{
 
 /* скрываем элементы */
 
-.visually-hidden{
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -56,7 +56,6 @@ img{
   overflow: hidden;
 }
 
-
 /* ===================== HEADER container ==================== */
 
 .container {
@@ -64,14 +63,13 @@ img{
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
-  padding-left: 15px
+  padding-left: 15px;
 
   /* outline: 2px solid tomato; */
 }
 
 .page-header {
   letter-spacing: 0.02em;
-  
 }
 
 .header-flex {
@@ -82,17 +80,18 @@ img{
 /* == header icons == */
 
 .header-section__icon {
-margin-right: 10px;
+  margin-right: 10px;
 
   fill: var(--primery-text-color);
 }
 
-.contacts-details:hover .header-section__icon{
+.contacts-details:hover .header-section__icon {
   fill: var(--acsent-color);
 }
 
 /* ========================= logo ============================*/
-.logo, .logo-footer-main {
+.logo,
+.logo-footer-main {
   /* margin-bottom: 20px; */
 
   color: var(--acsent-color);
@@ -126,19 +125,18 @@ margin-right: 10px;
 }
 /* ниже list - перебить margin */
 
-.site-nav{
+.site-nav {
   display: flex;
   margin-left: 93px;
 }
 
-.site-nav li{
+.site-nav li {
   /* outline: 2px solid tomato; */
 }
 
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
-} 
-
+}
 
 .nav-flex {
   display: flex;
@@ -170,24 +168,23 @@ margin-right: 10px;
 
 /* =============== end main navigation ================== */
 
-
 /* ==================== contacts HEADER ===================== */
 
-.header-contacts{
+.header-contacts {
   display: flex;
   /* outline: 2px solid tomato; */
 }
 
-.address-flex{
+.address-flex {
   margin-left: auto;
 }
 
-.header-contacts .item-contacts + .item-contacts{
+.header-contacts .item-contacts + .item-contacts {
   margin-left: 50px;
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-.contacts-details{
+.contacts-details {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -201,56 +198,56 @@ margin-right: 10px;
   line-height: 1.14;
   text-decoration: none;
 }
- /* ==================== contacts header ===================== */
+/* ==================== contacts header ===================== */
 
 /* =========== end heared container ============ */
 
 /* ================= FOOTER ====================== */
 
-
-.footer {  
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 
   background-color: var(--background-color);
-
 }
 
-.footer-container{
-
+/* пробую ровнять */
+.footer-container {
+  display: flex;
   width: 1200px;
   padding-right: 15px;
-  padding-left: 15px    
+  padding-left: 15px;
 
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 
   margin-left: auto;
   margin-right: auto;
-  
-}   
+}
 
 /* logo footer */
 
+.logo-container {
+  display: flex;
+}
+
 .logo-footer-main {
   display: block;
-} 
+}
 
-.logo-footer{
+.logo-footer {
   color: var(--secondary-color);
 }
 
-.logo-footer:hover{
-  color: var(--acsent-color)
+.logo-footer:hover {
+  color: var(--acsent-color);
 }
 
-.address-container{
-  display: flex; 
-  flex-direction: column;   
+.address-container {
+  display: flex;
+  flex-direction: column;
 }
-
 
 .location {
-
   margin-top: 20px;
 
   color: var(--secondary-color);
@@ -262,7 +259,6 @@ margin-right: 10px;
 }
 
 .contacts {
-
   margin-top: 9px;
 
   color: var(--footer-contacts-color);
@@ -273,32 +269,30 @@ margin-right: 10px;
   text-decoration: none;
 }
 
-/* footer icons */
-
-/* .footer__date-container{
+.footer__date-container {
   display: flex;
-} */
-
-.footer-sosial__text{
-  font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-
-text-transform: uppercase;
-
-color: var(--secondary-color);
 }
 
-.footer-sosial{
+.footer-sosial__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+
+  text-transform: uppercase;
+
+  color: var(--secondary-color);
+}
+
+.footer-sosial {
   width: 270px;
   margin-left: 69px;
 }
 
-.footer-sosial__list{
+.footer-sosial__list {
   display: flex;
   justify-content: space-between;
-} 
+}
 
 .footer-sosial__link {
   display: flex;
@@ -310,16 +304,15 @@ color: var(--secondary-color);
   border-radius: 50%;
 }
 
-.footer-sosial__icon{
+.footer-sosial__icon {
   fill: var(--secondary-color);
-  outline: 2px solid tomato;}
-  
+}
 
 .footer-sosial__link:hover .footer-sosial__icon {
   fill: var(--secondary-color);
-} 
+}
 .footer-sosial__link:hover {
   background-color: var(--acsent-color);
-} 
+}
 
 /* ================= END FOOTER ====================== */

@@ -41,15 +41,16 @@
   margin-right: auto;
 
   background-color: var(--background-color);
-  /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-  /* background-image: linear-gradient(
+
+  background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
-    )
-    url(../img/background-image-hero.jpg);
+    ),
+    url("../img/background-image-hero.jpg");
+
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; */
+  background-position: center;
 
   text-align: center;
 }
@@ -146,6 +147,44 @@
 /* ================= end our occupation section ======================== */
 
 /* ====================== ADVANTEGES  block==========================*/
+
+/* == advanteges icons == */
+
+.advantages-list .item::before {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 120px;
+
+  margin-bottom: 30px;
+  border-radius: 4px;
+
+  background-color: var(--button-background);
+}
+
+.advantages-list .first-icon::before {
+  background-image: url(../img/Group-icon.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.advantages-list .second-icon::before {
+  background-image: url(../img/clock-icon.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.advantages-list .third-icon::before {
+  background-image: url(../img/diagram-icon.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.advantages-list .fourth-icon::before {
+  background-image: url(../img/astronaut-icon.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
 
 .advantages-list {
   display: flex;
