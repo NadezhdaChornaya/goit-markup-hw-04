@@ -16,6 +16,7 @@
   --border-color: #EEEEEE;
   --border-color-secondary: #ECECEC;
   --icon-color: #AFB1B8;
+  --footer-icon: rgba(255, 255, 255, 0.1);
 }
 
 /* Тип блочной модели элементов */
@@ -73,11 +74,21 @@ img{
   
 }
 
-/* все в одну строку */
-
 .header-flex {
   display: flex;
   align-items: center;
+}
+
+/* == header icons == */
+
+.header-section__icon {
+margin-right: 10px;
+
+  fill: var(--primery-text-color);
+}
+
+.contacts-details:hover .header-section__icon{
+  fill: var(--acsent-color);
 }
 
 /* ========================= logo ============================*/
@@ -170,10 +181,16 @@ img{
 .address-flex{
   margin-left: auto;
 }
-/* почему не ровняет по левому краю??? */
 
 .header-contacts .item-contacts + .item-contacts{
   margin-left: 50px;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.contacts-details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-contacts .contacts-details {
@@ -200,6 +217,7 @@ img{
 }
 
 .footer-container{
+
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px    
@@ -255,7 +273,53 @@ img{
   text-decoration: none;
 }
 
+/* footer icons */
 
+/* .footer__date-container{
+  display: flex;
+} */
 
+.footer-sosial__text{
+  font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+
+text-transform: uppercase;
+
+color: var(--secondary-color);
+}
+
+.footer-sosial{
+  width: 270px;
+  margin-left: 69px;
+}
+
+.footer-sosial__list{
+  display: flex;
+  justify-content: space-between;
+} 
+
+.footer-sosial__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--footer-icon);
+  border-radius: 50%;
+}
+
+.footer-sosial__icon{
+  fill: var(--secondary-color);
+  outline: 2px solid tomato;}
+  
+
+.footer-sosial__link:hover .footer-sosial__icon {
+  fill: var(--secondary-color);
+} 
+.footer-sosial__link:hover {
+  background-color: var(--acsent-color);
+} 
 
 /* ================= END FOOTER ====================== */
