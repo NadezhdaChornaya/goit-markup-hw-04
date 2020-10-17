@@ -80,6 +80,7 @@ img {
 /* == header icons == */
 
 .header-section__icon {
+  display: block;
   margin-right: 10px;
 
   fill: var(--primery-text-color);
@@ -130,10 +131,6 @@ img {
   margin-left: 93px;
 }
 
-.site-nav li {
-  /* outline: 2px solid tomato; */
-}
-
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
@@ -172,7 +169,6 @@ img {
 
 .header-contacts {
   display: flex;
-  /* outline: 2px solid tomato; */
 }
 
 .address-flex {
@@ -186,6 +182,7 @@ img {
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .contacts-details {
   display: flex;
+  height: 80px;
   justify-content: center;
   align-items: center;
 }
