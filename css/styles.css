@@ -162,28 +162,29 @@
   background-color: var(--button-background);
 }
 
-.advantages-list .first-icon::before {
-  background-image: url(../img/Group-icon.png);
+.advantages-list .first-icon::before,
+.advantages-list .second-icon::before,
+.advantages-list .third-icon::before,
+.advantages-list .fourth-icon::before {
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-size: 70px 70px;
+}
+
+.advantages-list .first-icon::before {
+  background-image: url(../img/Group-icon.png);
 }
 
 .advantages-list .second-icon::before {
   background-image: url(../img/clock-icon.png);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
 
 .advantages-list .third-icon::before {
   background-image: url(../img/diagram-icon.png);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
 
 .advantages-list .fourth-icon::before {
   background-image: url(../img/astronaut-icon.png);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
 
 .advantages-list {
@@ -218,8 +219,6 @@
 .team-item {
   /* width: 270px; */
   width: calc((100% - 3 * 30px) / 4);
-  /* margin-right: 30px; */
-  /* margin-bottom: 30px; */
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
