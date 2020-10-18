@@ -179,7 +179,6 @@ img {
   margin-left: 50px;
 }
 
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .contacts-details {
   display: flex;
   height: 80px;
@@ -222,10 +221,6 @@ img {
 }
 
 /* logo footer */
-
-/* .logo-container {
-  display: flex;
-} */
 
 .logo-footer-main {
   display: block;
@@ -288,7 +283,10 @@ img {
 
 .footer-sosial__list {
   display: flex;
-  justify-content: space-between;
+}
+
+.footer-sosial__item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .footer-sosial__link {
